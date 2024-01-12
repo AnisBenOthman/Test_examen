@@ -7,7 +7,7 @@ const ConferenceSchema = new Schema({
     required: true,
   },
   description: {
-    type: Number,
+    type: String,
     required: true,
   },
   nbrPaperMax: {

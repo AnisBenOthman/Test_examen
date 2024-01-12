@@ -7,7 +7,7 @@ const PhdstudentSchema = new Schema({
     required: true,
   },
   email: {
-    type: String,
+    type: Number,
     required: true,
   },
   phone: {
