@@ -7,7 +7,7 @@ const PhdstudentSchema = new Schema({
     required: true,
   },
   email: {
-    type: String,
+    type: Number,
     required: true,
   },
   phone: {
@@ -22,7 +22,15 @@ const PhdstudentSchema = new Schema({
 type : String,
 required : true,
 
-  }
+  },
+  rafik: {
+    type: Number,
+    required: false,
+  },
+  message: {
+    type: String,
+    required: true,
+  },
 });
 
 export default model("PhdStudent", PhdstudentSchema);
