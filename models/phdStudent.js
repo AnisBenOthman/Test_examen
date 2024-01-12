@@ -18,6 +18,10 @@ const PhdstudentSchema = new Schema({
     type: String,
     required: true,
   },
+  message: {
+    type: String,
+    required: true,
+  },
 });
 
 export default model("PhdStudent", PhdstudentSchema);
