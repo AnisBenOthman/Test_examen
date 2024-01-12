@@ -1,0 +1,25 @@
+version: "3"
+services:
+  ws:
+    image: ex-jscs-sp-2324:1
+    build: .
+    environment:
+      - NODE_ENV=production
+    ports:
+      - "7070:9090"
+    networks:
+      - cinfo-jscs
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo:5
+    volumes:
+      - db:/data/db
+    networks:
+      - cinfo-jscs
+    ports:
+      - "7071:27017"
+volumes:
+  db:
+networks:
+  cinfo-jscs:
