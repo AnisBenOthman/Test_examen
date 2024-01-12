@@ -18,6 +18,10 @@ const PhdstudentSchema = new Schema({
     type: String,
     required: true,
   },
+  rafik: {
+    type: Number,
+    required: false,
+  },
 });
 
 export default model("PhdStudent", PhdstudentSchema);
