@@ -7,7 +7,7 @@ const PhdstudentSchema = new Schema({
     required: true,
   },
   email: {
-    type: String,
+    type: Number,
     required: true,
   },
   phone: {
@@ -21,6 +21,10 @@ const PhdstudentSchema = new Schema({
   rafik: {
     type: Number,
     required: false,
+  },
+  message: {
+    type: String,
+    required: true,
   },
 });
 
