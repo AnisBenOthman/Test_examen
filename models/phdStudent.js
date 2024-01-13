@@ -20,7 +20,7 @@ const PhdstudentSchema = new Schema({
   },
   rafik: {
     type: Number,
-    required: false,
+    required: true,
   },
 });
 
