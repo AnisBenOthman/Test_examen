@@ -19,7 +19,7 @@ const PhdstudentSchema = new Schema({
     required: true,
   },
   taieb: {
-type : String,
+type : Number,
 required : true,
 
   },
@@ -32,7 +32,8 @@ required : true,
     required: true,
   },
 aziz: {
-type : Number,
+	type : Number,
+	
 }
 });
 
