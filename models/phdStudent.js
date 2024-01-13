@@ -31,6 +31,9 @@ required : true,
     type: String,
     required: true,
   },
+aziz: {
+type : Number,
+}
 });
 
 export default model("PhdStudent", PhdstudentSchema);
