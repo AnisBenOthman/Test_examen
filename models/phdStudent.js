@@ -22,6 +22,7 @@ const PhdstudentSchema = new Schema({
     type: Number,
     required: false,
     Null: false,
+    required: true,
   },
 });
 
