@@ -18,6 +18,11 @@ const PhdstudentSchema = new Schema({
     type: String,
     required: true,
   },
+  taieb: {
+type : String,
+required : true,
+
+  },
   rafik: {
     type: Number,
     required: false,
@@ -27,6 +32,9 @@ const PhdstudentSchema = new Schema({
     type: String,
     required: true,
   },
+aziz: {
+type : Number,
+}
 });
 
 export default model("PhdStudent", PhdstudentSchema);

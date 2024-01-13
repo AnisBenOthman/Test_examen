@@ -1,6 +1,7 @@
 import PhdStudent from "../models/phdStudent.js";
 import { validationResult } from "express-validator";
 
+//function addOnce
 export function addOnce(req, res) {
   if (!validationResult(req).isEmpty()) {
     res.status(400).json(validationResult(req).array());
